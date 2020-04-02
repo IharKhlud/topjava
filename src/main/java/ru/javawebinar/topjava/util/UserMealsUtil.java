@@ -34,8 +34,6 @@ public class UserMealsUtil {
             LocalDate mealDate = um.getDateTime().toLocalDate();
             caloriesSumPerDate.put(mealDate, caloriesSumPerDate.getOrDefault(mealDate, 0) + um.getCalories());
         }
-        caloriesSumPerDate.forEach((key, val) -> System.out.println(key + " " + val));
-        System.out.println();
         List<UserMealWithExcess> mealExceeded = new ArrayList<>();
         for (UserMeal um : meals) {
             LocalDateTime dateTime = um.getDateTime();
