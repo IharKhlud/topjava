@@ -16,7 +16,7 @@
     <li><a href="users">Users</a></li>
 </ul>
 <hr>
-<h2>Meals</h2>
+<h2>Meals GRUD</h2>
     <table border="1" cellspacing="0" cellpadding="2">
         <c:forEach items="${meals.mealTo}" var="i" >
         <tr <c:if test="${i.excess == true}"><c:out value="style=color:red"></c:out></c:if>>
